@@ -789,11 +789,11 @@ html[data-theme="night"] .theme-switch-dot { background: #f6f8f1; transform: tra
 .callout {
   --callout-rgb: 59, 130, 246;
   margin: 22px 0;
-  padding: 16px 18px;
+  padding: 20px;
   border: 1px solid rgba(var(--callout-rgb), 0.3);
   border-left-width: 3px;
   border-left-color: rgb(var(--callout-rgb));
-  border-radius: 10px;
+  border-radius: 13px;
   background: linear-gradient(100deg, rgba(var(--callout-rgb), 0.13), rgba(var(--callout-rgb), 0.035));
 }
 .callout.warning { --callout-rgb: 248, 113, 113; }
@@ -824,10 +824,10 @@ html[data-theme="night"] .theme-switch-dot { background: #f6f8f1; transform: tra
   --decision-rgb: 59, 130, 246;
   position: relative;
   margin: 24px 0 8px;
-  padding: 17px 19px 17px 21px;
+  padding: 20px 20px 20px 22px;
   border: 1px solid rgba(var(--decision-rgb), 0.32);
   border-left: 4px solid rgb(var(--decision-rgb));
-  border-radius: 10px;
+  border-radius: 13px;
   background:
     linear-gradient(102deg, rgba(var(--decision-rgb), 0.18), rgba(var(--decision-rgb), 0.055) 72%),
     rgba(15, 22, 16, 0.8);
@@ -857,9 +857,9 @@ html[data-theme="night"] .theme-switch-dot { background: #f6f8f1; transform: tra
    ============================================================ */
 .option-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 18px 0 22px; }
 .option-card {
-  padding: 17px 18px;
+  padding: 20px;
   border: 1px solid var(--border);
-  border-radius: 11px;
+  border-radius: 13px;
   background: rgba(19, 27, 20, 0.75);
 }
 .option-card.is-chosen { border-color: rgba(52, 211, 153, 0.34); background: linear-gradient(145deg, rgba(52, 211, 153, 0.075), rgba(19, 27, 20, 0.85)); }
@@ -884,9 +884,9 @@ html[data-theme="night"] .theme-switch-dot { background: #f6f8f1; transform: tra
 .layer-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 18px 0 22px; }
 .layer-card {
   position: relative;
-  padding: 18px;
+  padding: 20px;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 13px;
   background: rgba(19, 27, 20, .72);
 }
 .layer-number {
@@ -904,8 +904,8 @@ html[data-theme="night"] .theme-switch-dot { background: #f6f8f1; transform: tra
 .rank-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 18px 0 22px; }
 .rank-card {
   display: grid; grid-template-columns: 31px minmax(0, 1fr); gap: 11px;
-  padding: 17px;
-  border: 1px solid var(--border); border-radius: 11px;
+  padding: 20px;
+  border: 1px solid var(--border); border-radius: 13px;
   background: rgba(19, 27, 20, .72);
 }
 .rank-num {
@@ -921,8 +921,8 @@ html[data-theme="night"] .theme-switch-dot { background: #f6f8f1; transform: tra
 
 .test-grid, .deploy-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 18px 0 22px; }
 .test-card, .deploy-card {
-  padding: 18px;
-  border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px;
+  border: 1px solid var(--border); border-radius: 13px;
   background: rgba(19, 27, 20, .72);
 }
 .test-label, .deploy-label {
@@ -1140,10 +1140,10 @@ table code { font-size: .78rem; }
 /* ============================================================
    PIPELINE STEPS
    ============================================================ */
-.steps { display: grid; gap: 12px; margin: 26px 0 20px; padding: 0; list-style: none; }
+.steps { display: grid; gap: 14px; margin: 26px 0 20px; padding: 0; list-style: none; }
 .step {
-  display: grid; grid-template-columns: 48px minmax(0, 1fr);
-  gap: 17px;
+  display: grid; grid-template-columns: 44px minmax(0, 1fr);
+  gap: 20px;
   padding: 20px;
   border: 1px solid var(--border);
   border-radius: 13px;
@@ -1151,23 +1151,23 @@ table code { font-size: .78rem; }
 }
 .step-num {
   display: flex; align-items: center; justify-content: center;
-  width: 42px; height: 42px;
+  width: 44px; height: 44px;
   border: 1px solid rgba(140, 188, 141, .3);
   border-radius: 50%;
   background: rgba(140, 188, 141, .07);
   color: var(--accent-bright);
   font-family: var(--font-mono); font-size: .76rem; font-weight: 650;
 }
-.step-content { min-width: 0; }
-.step-content h3 { margin: 1px 0 8px; font-size: 1.04rem; }
+.step-content { min-width: 0; padding-top: 2px; }
+.step-content h3 { margin: 0 0 8px; font-size: 1.04rem; }
 .step-content p { color: #adb9c8; font-size: .89rem; margin-bottom: 9px; }
 .step-content p:last-child { margin-bottom: 0; }
 .step-content ul, .step-content ol { margin-top: 7px; margin-bottom: 5px; }
 .step-content li { color: #b8c2b2; font-size: .86rem; }
 .step-gate {
   display: inline-flex; align-items: center; gap: 6px;
-  margin-top: 5px; padding: 4px 8px;
-  border: 1px solid rgba(52,211,153,.24); border-radius: 5px;
+  margin-top: 8px; padding: 5px 10px;
+  border: 1px solid rgba(52,211,153,.24); border-radius: 6px;
   background: rgba(52,211,153,.055);
   color: #a5ddc0; font-family: var(--font-mono); font-size: .67rem;
 }
@@ -1434,9 +1434,9 @@ pre code .kw { color: #c7b2d9; }
 .requirement-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin: 16px 0 24px; }
 .requirement-card {
   position: relative;
-  padding: 17px;
+  padding: 20px;
   border: 1px solid var(--border);
-  border-radius: 11px;
+  border-radius: 13px;
   background: rgba(19, 27, 20, .7);
 }
 .requirement-no {
@@ -1625,8 +1625,8 @@ pre code .kw { color: #c7b2d9; }
   .model-trial { grid-template-columns: 1fr auto; gap: 5px 8px; }
   .model-trial-why { grid-column: 1 / -1; }
   .variant-compare { grid-template-columns: 1fr; }
-  .step { grid-template-columns: 35px minmax(0,1fr); gap: 12px; padding: 16px 14px; }
-  .step-num { width: 33px; height: 33px; font-size: .67rem; }
+  .step { grid-template-columns: 36px minmax(0,1fr); gap: 14px; padding: 16px; }
+  .step-num { width: 36px; height: 36px; font-size: .67rem; }
   .step-content h3 { font-size: .98rem; }
   .stat-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .stat-card:last-child { grid-column: 1 / -1; }
@@ -4504,7 +4504,7 @@ for input_fixture, expected, slice_name in regression_cases:
     </section>
 
     <!-- ============================================================
-         SECTION 12 — START BUILDING
+         SECTION 12 - START BUILDING
          ============================================================ -->
     <section class="guide-section" id="start-building" aria-labelledby="start-building-title">
       <h2 class="section-heading" id="start-building-title"><span class="section-num">12</span> Start building</h2>
