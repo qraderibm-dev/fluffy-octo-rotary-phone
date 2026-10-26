@@ -8,9 +8,9 @@
 <meta name="color-scheme" content="light">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Brioche Model-Building Reference — brioche-qwen3b-annotator-v2">
+<meta property="og:title" content="Brioche Model-Building Reference - brioche-qwen3b-annotator-v2">
 <meta property="og:description" content="A decision-making guide from a zero-budget, 8 GB laptop project: fine-tuning Qwen 2.5 3B to annotate 15-second audio clips with the Meeami Brioche 28-Class taxonomy.">
-<title>Brioche Model-Building Reference — brioche-qwen3b-annotator-v2</title>
+<title>Brioche Model-Building Reference - brioche-qwen3b-annotator-v2</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f3f5ec'/%3E%3Cpath d='M8 23V9h8.2c3.4 0 5.4 1.8 5.4 4.6 0 1.9-1.1 3.3-2.8 3.9 2.1.5 3.4 2.1 3.4 4.3 0 3-2.2 5.2-5.9 5.2H8zm4.1-8.3h3.4c1.5 0 2.4-.8 2.4-2s-.9-1.9-2.4-1.9h-3.4v3.9zm0 5.8h3.7c1.7 0 2.7-.8 2.7-2.1 0-1.4-1-2.2-2.7-2.2h-3.7v4.3z' fill='%233f6b42'/%3E%3C/svg%3E">
 <style>
 /* ============================================================
@@ -2196,7 +2196,7 @@ html.has-motion details[open] > .details-inner {
 </style>
 <style id="light-theme">
 /* ============================================================
-   LIGHT THEME — screen palette
+   LIGHT THEME - screen palette
    ============================================================ */
 @media screen {
   :root {
@@ -2664,7 +2664,7 @@ html.has-motion details[open] > .details-inner {
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
   </button>
 
-  <a class="topbar-brand" href="#page-top" aria-label="Brioche reference — back to top">
+  <a class="topbar-brand" href="#page-top" aria-label="Brioche reference - back to top">
     <span class="brand-mark" aria-hidden="true">Q3B</span>
     <span class="brand-copy">
       <span class="brand-kicker">Permanent reference</span>
@@ -2704,7 +2704,7 @@ html.has-motion details[open] > .details-inner {
       <div>
         <p class="sidebar-eyebrow">Navigator</p>
         <p class="sidebar-title">Model-building guide</p>
-        <p class="sidebar-subtitle">11 sections from problem to production.</p>
+        <p class="sidebar-subtitle">13 sections from problem to production.</p>
       </div>
       <button class="icon-button sidebar-close" id="sidebar-close" type="button" aria-label="Close navigation">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
@@ -2755,7 +2755,7 @@ html.has-motion details[open] > .details-inner {
           <p class="toc-kicker">Start here</p>
           <h2 id="toc-heading" data-nav-exclude>Contents</h2>
         </div>
-        <p class="toc-note">11 sections · use <strong>Ctrl K</strong> to search every heading.</p>
+        <p class="toc-note">13 sections · use <strong>Ctrl K</strong> to search every heading.</p>
       </div>
       <ol class="toc-grid">
         <li><a class="toc-card" href="#tldr"><span class="toc-num">00</span><span><span class="toc-name">TL;DR</span><span class="toc-desc">Problem, build, outcome, transferable lesson.</span></span><span class="toc-arrow" aria-hidden="true">→</span></a></li>
@@ -2769,11 +2769,13 @@ html.has-motion details[open] > .details-inner {
         <li><a class="toc-card" href="#numbers"><span class="toc-num">08</span><span><span class="toc-name">Numbers &amp; metrics</span><span class="toc-desc">Every meaningful number from the project.</span></span><span class="toc-arrow" aria-hidden="true">→</span></a></li>
         <li><a class="toc-card" href="#retrospective"><span class="toc-num">09</span><span><span class="toc-name">What we&rsquo;d do differently</span><span class="toc-desc">An honest retrospective on the process.</span></span><span class="toc-arrow" aria-hidden="true">→</span></a></li>
         <li><a class="toc-card" href="#checklist"><span class="toc-num">10</span><span><span class="toc-name">Reusable checklist</span><span class="toc-desc">The next project, start to finish.</span></span><span class="toc-arrow" aria-hidden="true">→</span></a></li>
+        <li><a class="toc-card" href="#universal-readiness"><span class="toc-num">11</span><span><span class="toc-name">Universal model readiness</span><span class="toc-desc">The gaps to close before any model reaches production.</span></span><span class="toc-arrow" aria-hidden="true">→</span></a></li>
+        <li><a class="toc-card" href="#start-building"><span class="toc-num">12</span><span><span class="toc-name">Start building</span><span class="toc-desc">A first-project path and open-source learning resources.</span></span><span class="toc-arrow" aria-hidden="true">→</span></a></li>
       </ol>
     </nav>
 
     <!-- ============================================================
-         SECTION 0 — TL;DR
+         SECTION 0 - TL;DR
          ============================================================ -->
     <section class="guide-section" id="tldr" aria-labelledby="tldr-title">
       <h2 class="section-heading" id="tldr-title"><span class="section-num">0</span> TL;DR</h2>
@@ -2839,7 +2841,7 @@ html.has-motion details[open] > .details-inner {
     </section>
 
     <!-- ============================================================
-         SECTION 1 — THE ORIGINAL PROBLEM
+         SECTION 1 - THE ORIGINAL PROBLEM
          ============================================================ -->
     <section class="guide-section" id="problem" aria-labelledby="problem-title">
       <h2 class="section-heading" id="problem-title"><span class="section-num">1</span> The original problem</h2>
@@ -2903,7 +2905,7 @@ html.has-motion details[open] > .details-inner {
         <p>Any of these three failing means the annotation fails review. A structurally valid object with the wrong event label is still a failed annotation.</p>
       </div>
 
-      <h3>Original attempted architecture — and why it failed</h3>
+      <h3>Original attempted architecture - and why it failed</h3>
       <div class="failure-box">
         <div class="failure-flow" aria-label="Failed architecture flow">
           <span class="flow-node">Every clip</span>
@@ -2920,7 +2922,7 @@ html.has-motion details[open] > .details-inner {
     </section>
 
     <!-- ============================================================
-         SECTION 2 — DECISION FRAMEWORKS
+         SECTION 2 - DECISION FRAMEWORKS
          ============================================================ -->
     <section class="guide-section" id="decisions" aria-labelledby="decisions-title">
       <h2 class="section-heading" id="decisions-title"><span class="section-num">2</span> Decision frameworks</h2>
@@ -2953,7 +2955,7 @@ html.has-motion details[open] > .details-inner {
             </div>
             <p><strong>What:</strong> Retrieve relevant documents from a corpus at query time.</p>
             <p><strong>Use when:</strong> Knowledge is large, changing, factual, or per-query.</p>
-            <p><strong>Do NOT use when:</strong> The task is behavior, format, or classification — not knowledge retrieval.</p>
+            <p><strong>Do NOT use when:</strong> The task is behavior, format, or classification - not knowledge retrieval.</p>
             <p class="fact"><strong>In this project:</strong> Rejected. The task is classification into a fixed taxonomy, not knowledge lookup. There is no corpus to retrieve from. The &ldquo;knowledge&rdquo; is the taxonomy itself, which fits in a prompt.</p>
           </article>
 
@@ -2964,7 +2966,7 @@ html.has-motion details[open] > .details-inner {
             </div>
             <p><strong>What:</strong> Train additional weights on labeled examples to shift behavior.</p>
             <p><strong>Use when:</strong> The task requires a strict format, style, or behavior that prompts can&rsquo;t reliably enforce.</p>
-            <p><strong>Do NOT use when:</strong> You only need to change what the model knows — use RAG.</p>
+            <p><strong>Do NOT use when:</strong> You only need to change what the model knows - use RAG.</p>
             <p class="fact"><strong>In this project:</strong> Chosen, but only after prompt + grammar + postprocess failed to close the gap on small models.</p>
           </article>
 
@@ -2993,7 +2995,7 @@ html.has-motion details[open] > .details-inner {
 
         <aside class="decision blue" aria-label="Decision and rationale for Q1">
           <div class="decision-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Decision → Why</div>
-          <p><strong>Chosen: teacher distillation, then QLoRA fine-tuning.</strong> RAG was rejected because there is no knowledge corpus — only a fixed taxonomy that fits in a prompt. Prompting alone failed below 3B, and grammar constraints repaired the structure without repairing the meaning. NIM supplied the teacher signal; 538 examples taught Qwen 3B the behavior; postprocess handled the deterministic residual.</p>
+          <p><strong>Chosen: teacher distillation, then QLoRA fine-tuning.</strong> RAG was rejected because there is no knowledge corpus - only a fixed taxonomy that fits in a prompt. Prompting alone failed below 3B, and grammar constraints repaired the structure without repairing the meaning. NIM supplied the teacher signal; 538 examples taught Qwen 3B the behavior; postprocess handled the deterministic residual.</p>
         </aside>
       </div>
 
@@ -3070,7 +3072,7 @@ html.has-motion details[open] > .details-inner {
             <span class="layer-number">03</span>
             <h4>Deterministic postprocessing</h4>
             <p>After the model returns, run code that fixes known deterministic failures: sort labels, canonicalize event names, strip hallucinated classes, add classes the model dropped.</p>
-            <p><strong>Use when:</strong> You know the exact failure patterns — they repeat every time.</p>
+            <p><strong>Use when:</strong> You know the exact failure patterns - they repeat every time.</p>
             <p><strong>In this project:</strong> ~500 lines of postprocess rules. Doubled accuracy on some categories. The final fix that took 68% → 100% on the exhaustive suite.</p>
           </article>
         </div>
@@ -3161,12 +3163,12 @@ html.has-motion details[open] > .details-inner {
             <h4>Novel phrasing regression</h4>
             <p>100+ inputs the model has never seen, phrased differently from training. Check: &ldquo;Does the model generalize?&rdquo;</p>
             <p><strong>In this project:</strong> 107 tests across 21 categories.</p>
-            <div class="result-strip"><span>Result</span><strong>84% true accuracy</strong> — only after accounting for GT errors</div>
+            <div class="result-strip"><span>Result</span><strong>84% true accuracy</strong> - only after accounting for GT errors</div>
           </article>
           <article class="test-card">
             <div class="test-label"><span>Type C</span><span class="test-letter">C</span></div>
             <h4>Ground-truth quality audit</h4>
-            <p>Manually verify the teacher&rsquo;s outputs on 20–30% of the regression set. You will find errors — teacher models are 5–15% wrong.</p>
+            <p>Manually verify the teacher&rsquo;s outputs on 20–30% of the regression set. You will find errors - teacher models are 5–15% wrong.</p>
             <p><strong>In this project:</strong> Found 9–10 of 107 NIM outputs were wrong.</p>
             <div class="result-strip"><span>Result</span><strong>Raw &ldquo;68%&rdquo; became 84% true accuracy</strong> after correction</div>
           </article>
@@ -3207,7 +3209,7 @@ html.has-motion details[open] > .details-inner {
           </article>
           <article class="deploy-card is-chosen">
             <div class="deploy-label"><span>Option C</span><span>Hybrid</span></div>
-            <h4>Hybrid — recommended</h4>
+            <h4>Hybrid - recommended</h4>
             <p><strong>Recommended for most teams.</strong></p>
             <p><strong>Primary:</strong> Cloud API for high-quality, high-volume work (NIM, GPT, Claude).</p>
             <p><strong>Fallback:</strong> Fine-tuned local model for offline use, sensitive data, or cost reduction.</p>
@@ -3336,11 +3338,11 @@ html.has-motion details[open] > .details-inner {
           </table>
         </div>
 
-        <p><strong>In this project:</strong> Q4_K_M. The right call for 3B on an 8 GB laptop. Never go below Q3_K_M for production use — the quality loss is real.</p>
+        <p><strong>In this project:</strong> Q4_K_M. The right call for 3B on an 8 GB laptop. Never go below Q3_K_M for production use - the quality loss is real.</p>
 
         <aside class="decision green" aria-label="Decision and rationale for Q8">
           <div class="decision-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Decision → Why</div>
-          <p><strong>Chosen: Q4_K_M.</strong> It brought the 3B model down to about 1.9 GB while retaining roughly 97–98% of FP16 quality — enough to fit the laptop&rsquo;s usable RAM and run on CPU. Lower quants traded away real semantic accuracy; higher quants added memory without a meaningful benefit for this narrow task.</p>
+          <p><strong>Chosen: Q4_K_M.</strong> It brought the 3B model down to about 1.9 GB while retaining roughly 97–98% of FP16 quality - enough to fit the laptop&rsquo;s usable RAM and run on CPU. Lower quants traded away real semantic accuracy; higher quants added memory without a meaningful benefit for this narrow task.</p>
         </aside>
       </div>
 
@@ -3422,7 +3424,7 @@ html.has-motion details[open] > .details-inner {
     </section>
 
     <!-- ============================================================
-         SECTION 3 — THE FULL JOURNEY
+         SECTION 3 - THE FULL JOURNEY
          ============================================================ -->
     <section class="guide-section" id="journey" aria-labelledby="journey-title">
       <h2 class="section-heading" id="journey-title"><span class="section-num">3</span> The full journey</h2>
@@ -3432,7 +3434,7 @@ html.has-motion details[open] > .details-inner {
         <article class="phase">
           <div class="phase-head">
             <span class="phase-index">01</span>
-            <h3>Phase 1 — Prompt engineering with hosted LLMs</h3>
+            <h3>Phase 1 - Prompt engineering with hosted LLMs</h3>
             <span class="phase-tag">Prompting</span>
           </div>
           <dl class="fact-list">
@@ -3451,7 +3453,7 @@ html.has-motion details[open] > .details-inner {
         <article class="phase">
           <div class="phase-head">
             <span class="phase-index">02</span>
-            <h3>Phase 2 — Model exploration for local deployment</h3>
+            <h3>Phase 2 - Model exploration for local deployment</h3>
             <span class="phase-tag">Model choice</span>
           </div>
           <dl class="fact-list">
@@ -3501,7 +3503,7 @@ html.has-motion details[open] > .details-inner {
         <article class="phase is-chosen">
           <div class="phase-head">
             <span class="phase-index">03</span>
-            <h3>Phase 3 — Dataset generation</h3>
+            <h3>Phase 3 - Dataset generation</h3>
             <span class="phase-tag">Data</span>
           </div>
           <dl class="fact-list">
@@ -3512,7 +3514,7 @@ html.has-motion details[open] > .details-inner {
               <div class="variant-compare">
                 <div class="variant-card">
                   <h4>v1 · 269 examples</h4>
-                  <p>Template-generated. 100% validated. But model only got <strong>6/10</strong> — data wasn&rsquo;t diverse enough.</p>
+                  <p>Template-generated. 100% validated. But model only got <strong>6/10</strong> - data wasn&rsquo;t diverse enough.</p>
                 </div>
                 <div class="variant-card">
                   <h4>v2 · 538 examples</h4>
@@ -3527,7 +3529,7 @@ html.has-motion details[open] > .details-inner {
         <article class="phase">
           <div class="phase-head">
             <span class="phase-index">04</span>
-            <h3>Phase 4 — Training iterations</h3>
+            <h3>Phase 4 - Training iterations</h3>
             <span class="phase-tag">Training</span>
           </div>
           <dl class="fact-list">
@@ -3552,7 +3554,7 @@ html.has-motion details[open] > .details-inner {
         <article class="phase">
           <div class="phase-head">
             <span class="phase-index">05</span>
-            <h3>Phase 5 — Testing and iteration</h3>
+            <h3>Phase 5 - Testing and iteration</h3>
             <span class="phase-tag">Evaluation</span>
           </div>
           <dl class="fact-list">
@@ -3567,13 +3569,13 @@ html.has-motion details[open] > .details-inner {
               </ul>
             </dd>
           </dl>
-          <div class="phase-lesson"><span>Lesson</span>The model is fine. Every failure we saw was fixable in postprocess without retraining. Postprocess is not a hack — it&rsquo;s part of the architecture for deterministic failures.</div>
+          <div class="phase-lesson"><span>Lesson</span>The model is fine. Every failure we saw was fixable in postprocess without retraining. Postprocess is not a hack - it&rsquo;s part of the architecture for deterministic failures.</div>
         </article>
 
         <article class="phase">
           <div class="phase-head">
             <span class="phase-index">06</span>
-            <h3>Phase 6 — Deployment</h3>
+            <h3>Phase 6 - Deployment</h3>
             <span class="phase-tag">Packaging</span>
           </div>
           <dl class="fact-list">
@@ -3591,13 +3593,13 @@ html.has-motion details[open] > .details-inner {
             <dt>Result</dt>
             <dd>Model runs locally at <strong>7–8 tok/s</strong>, <strong>~15–30s per annotation</strong>.</dd>
           </dl>
-          <div class="phase-lesson"><span>Lesson</span>The whole bundle should ship together — model, prompt, postprocess, runner. A model without its support files is a broken artifact.</div>
+          <div class="phase-lesson"><span>Lesson</span>The whole bundle should ship together - model, prompt, postprocess, runner. A model without its support files is a broken artifact.</div>
         </article>
 
         <article class="phase">
           <div class="phase-head">
             <span class="phase-index">07</span>
-            <h3>Phase 7 — Integration attempts (learning what NOT to do)</h3>
+            <h3>Phase 7 - Integration attempts (learning what NOT to do)</h3>
             <span class="phase-tag">Dead end</span>
           </div>
           <dl class="fact-list">
@@ -3612,7 +3614,7 @@ html.has-motion details[open] > .details-inner {
     </section>
 
     <!-- ============================================================
-         SECTION 4 — THE REPEATABLE PIPELINE
+         SECTION 4 - THE REPEATABLE PIPELINE
          ============================================================ -->
     <section class="guide-section" id="pipeline" aria-labelledby="pipeline-title">
       <h2 class="section-heading" id="pipeline-title"><span class="section-num">4</span> The repeatable pipeline</h2>
@@ -3622,28 +3624,28 @@ html.has-motion details[open] > .details-inner {
         <li class="step">
           <span class="step-num" aria-hidden="true">01</span>
           <div class="step-content">
-            <h3>Step 1 — Define the task precisely</h3>
+            <h3>Step 1 - Define the task precisely</h3>
             <p>Write down the exact input format, output format, and validation rules. If a fresh annotator couldn&rsquo;t do it from your spec, the model can&rsquo;t either.</p>
           </div>
         </li>
         <li class="step">
           <span class="step-num" aria-hidden="true">02</span>
           <div class="step-content">
-            <h3>Step 2 — Verify a teacher model can do it</h3>
+            <h3>Step 2 - Verify a teacher model can do it</h3>
             <p>Test GPT-4 / Claude / NIM / largest available model on 10–20 cases. If the teacher can&rsquo;t reach ~90%, the task is too hard or the spec is ambiguous.</p>
           </div>
         </li>
         <li class="step">
           <span class="step-num" aria-hidden="true">03</span>
           <div class="step-content">
-            <h3>Step 3 — Design the system prompt</h3>
+            <h3>Step 3 - Design the system prompt</h3>
             <p>Include the taxonomy, rules, edge cases, worked examples. Test with the teacher. Iterate until the teacher hits ~95%.</p>
           </div>
         </li>
         <li class="step">
           <span class="step-num" aria-hidden="true">04</span>
           <div class="step-content">
-            <h3>Step 4 — Generate a diverse template of inputs</h3>
+            <h3>Step 4 - Generate a diverse template of inputs</h3>
             <p>For each class, write 5–10 genuinely different phrasings (not variations of &ldquo;loud X&rdquo;). Include multi-event combinations. Include edge cases (silence, no-class events).</p>
             <span class="step-gate"><strong>Target:</strong> 500–600 inputs for ~30 classes.</span>
           </div>
@@ -3651,14 +3653,14 @@ html.has-motion details[open] > .details-inner {
         <li class="step">
           <span class="step-num" aria-hidden="true">05</span>
           <div class="step-content">
-            <h3>Step 5 — Generate target outputs with the teacher</h3>
+            <h3>Step 5 - Generate target outputs with the teacher</h3>
             <p>Run the teacher on all inputs. Save as JSONL. Record timing and model name.</p>
           </div>
         </li>
         <li class="step">
           <span class="step-num" aria-hidden="true">06</span>
           <div class="step-content">
-            <h3>Step 6 — Validate the teacher&rsquo;s output</h3>
+            <h3>Step 6 - Validate the teacher&rsquo;s output</h3>
             <p>Check structure (all fields, valid enums), semantics (labels match events), and consistency (same input always same output).</p>
             <span class="step-gate"><strong>Target:</strong> 100% clean data. If not, either improve the prompt or patch with deterministic postprocess.</span>
           </div>
@@ -3666,18 +3668,18 @@ html.has-motion details[open] > .details-inner {
         <li class="step">
           <span class="step-num" aria-hidden="true">07</span>
           <div class="step-content">
-            <h3>Step 7 — Fine-tune a small model</h3>
+            <h3>Step 7 - Fine-tune a small model</h3>
             <p>LoRA / QLoRA on Qwen 2.5 3B (or 1.5B for simpler tasks). Unsloth is the fastest path. ~20–30 min on a T4 for 500 examples.</p>
           </div>
         </li>
         <li class="step">
           <span class="step-num" aria-hidden="true">08</span>
           <div class="step-content">
-            <h3>Step 8 — Test exhaustively</h3>
+            <h3>Step 8 - Test exhaustively</h3>
             <ul>
               <li>50–100 deterministic tests covering every class / environment / rule</li>
               <li>100+ novel phrasings the model hasn&rsquo;t seen</li>
-              <li>Manually review the ground truth — you <strong>will</strong> find teacher errors</li>
+              <li>Manually review the ground truth - you <strong>will</strong> find teacher errors</li>
             </ul>
             <span class="step-gate"><strong>Gates:</strong> If exhaustive &lt; 95%, patch with postprocess. If novel phrasing &lt; 80%, you have a data variety problem, not a model problem.</span>
           </div>
@@ -3685,7 +3687,7 @@ html.has-motion details[open] > .details-inner {
         <li class="step">
           <span class="step-num" aria-hidden="true">09</span>
           <div class="step-content">
-            <h3>Step 9 — Export and package</h3>
+            <h3>Step 9 - Export and package</h3>
             <p>Merge LoRA into base. Quantize to Q4_K_M. Export GGUF. Bundle with:</p>
             <ul>
               <li>The exact system prompt used during training (<code>TRAIN_SYSTEM.txt</code>)</li>
@@ -3711,7 +3713,7 @@ html.has-motion details[open] > .details-inner {
         <li class="step">
           <span class="step-num" aria-hidden="true">10</span>
           <div class="step-content">
-            <h3>Step 10 — Deploy and monitor</h3>
+            <h3>Step 10 - Deploy and monitor</h3>
             <p>Archive the GGUF privately. Deploy locally via llama-server or via a FastAPI web UI. Log every annotation to JSONL. Review failures weekly. If a new failure pattern emerges, patch postprocess before retraining.</p>
           </div>
         </li>
@@ -3724,7 +3726,7 @@ html.has-motion details[open] > .details-inner {
     </section>
 
     <!-- ============================================================
-         SECTION 5 — FAILURE MODES CATALOG
+         SECTION 5 - FAILURE MODES CATALOG
          ============================================================ -->
     <section class="guide-section" id="failures" aria-labelledby="failures-title">
       <h2 class="section-heading" id="failures-title"><span class="section-num">5</span> Failure modes catalog</h2>
@@ -3823,7 +3825,7 @@ html.has-motion details[open] > .details-inner {
             <tr>
               <td class="row-num">12</td>
               <td><strong>Fails on taxonomy-adjacent inputs</strong><br>duck quacking, crow cawing</td>
-              <td>These aren&rsquo;t in the training data — duck, crow, seagull, pigeon, horse aren&rsquo;t in the Brioche taxonomy.</td>
+              <td>These aren&rsquo;t in the training data - duck, crow, seagull, pigeon, horse aren&rsquo;t in the Brioche taxonomy.</td>
               <td>Postprocess recognizes these as no-class; OR expand the taxonomy if needed.</td>
               <td><strong>Lesson:</strong> any model has a boundary. Know where yours is, document it, and use postprocess to guard it.</td>
             </tr>
@@ -3838,146 +3840,175 @@ html.has-motion details[open] > .details-inner {
     </section>
 
     <!-- ============================================================
-         SECTION 6 — REUSABLE PROMPTS AND TEMPLATES
+         SECTION 6 - REUSABLE PROMPTS AND TEMPLATES
          ============================================================ -->
     <section class="guide-section" id="templates" aria-labelledby="templates-title">
-      <h2 class="section-heading" id="templates-title"><span class="section-num">6</span> Reusable prompts &amp; templates</h2>
-      <p class="section-intro">The working shapes to copy into the next project. Adapt the rules and examples, but keep the separation between generation, validation, postprocessing, and testing.</p>
+      <h2 class="section-heading" id="templates-title"><span class="section-num">6</span> Reusable prompts &amp; templates for any model</h2>
+      <p class="section-intro">A reusable starting point for building or fine-tuning a text, audio, video, or multimodal model. Replace the input representation, task contract, taxonomy, and examples; keep the separation between generation, validation, postprocessing, and testing.</p>
 
       <div class="template-block">
-        <h3>Template 1 — System prompt for teacher model generation</h3>
-        <p class="template-intro">Use this when generating training data from a larger model:</p>
+        <h3>Template 1 - Teacher prompt for any model task</h3>
+        <p class="template-intro">Use this to generate consistently structured training examples from a capable teacher model. The input can be text, an audio transcript, a clip description, extracted frames, metadata, or a multimodal representation.</p>
         <details class="code-details template-details">
           <summary><span class="summary-title">View the system-prompt skeleton <span class="summary-meta">[placeholders]</span></span></summary>
           <div class="details-inner">
-            <pre data-lang="System prompt"><code>You are an expert [TASK NAME] agent. Given [INPUT FORMAT], return [OUTPUT FORMAT].
+            <pre data-lang="System prompt"><code>You are an expert [TEXT | AUDIO | VIDEO | MULTIMODAL] agent.
 
-RULES:
-1. [Rule about output structure]
-2. [Rule about valid values]
-3. [Rule about edge cases]
-4. [Rule about disambiguation]
-...
+TASK
+Given [INPUT REPRESENTATION], return one JSON object that follows
+[OUTPUT SCHEMA] exactly. Classify only evidence present in the input.
 
-EXAMPLES:
-Input: [example 1]
-Output: [exact expected JSON/prose]
+TAXONOMY
+- Valid labels: [LABEL LIST OR TAXONOMY REFERENCE]
+- Use [UNKNOWN | OTHER | ABSTAIN] when the input is insufficient.
+- Never add facts, sources, actions, speakers, objects, scenes, or intent
+  that the input does not support.
 
-Input: [example 2]
-Output: [exact expected output]
+RULES
+1. Return valid JSON only. No prose or markdown.
+2. Use only allowed enum values and labels.
+3. Add spans, timestamps, citations, or rationales only when the task requires them.
+4. Resolve ambiguous evidence with [YOUR DISAMBIGUATION RULE].
+5. Apply [PRIORITY / ORDERING RULE] when several events occur.
 
-[5-10 examples covering varied cases]</code></pre>
+EXAMPLES
+Input: [clear positive example]
+Output: [exact expected JSON]
+
+Input: [ambiguous or overlapping example]
+Output: [exact expected JSON]
+
+Input: [negative / no-event example]
+Output: [exact expected JSON]
+
+[Add 5–10 audited examples across task-relevant slices: writing styles,
+languages, environments, durations, quality levels, and hard boundaries.]</code></pre>
           </div>
         </details>
       </div>
 
       <div class="template-block">
-        <h3>Template 2 — Validation rules for teacher output</h3>
-        <p class="template-intro">Run this checklist against every generated record before the data is allowed into training. Structural checks are cheap; semantic checks are the ones that protect the student.</p>
+        <h3>Template 2 - Validation rules for training records</h3>
+        <p class="template-intro">Run this against every teacher-generated record before training. Structural checks keep the dataset machine-readable; evidence checks keep the student grounded in the supplied text or media.</p>
         <details class="code-details template-details">
           <summary><span class="summary-title">View the validation checklist <span class="summary-meta">3 layers</span></span></summary>
           <div class="details-inner">
-            <pre data-lang="Validation"><code>For each generated record, check:
+            <pre data-lang="Validation"><code>For each training record, check:
 
-STRUCTURAL:
-  - All required fields present
-  - Field types correct (list, string, enum)
-  - Enum values from allowed set only
-  - Label ordering rules respected
-  - Deduplication applied
+STRUCTURE
+  - Required fields are present and have the correct types
+  - JSON parses and matches the output schema
+  - Labels and enums are in the approved taxonomy
+  - When used, spans or timestamps are within the input bounds and ordered
+  - Duplicate labels, spans, and records are removed
 
-SEMANTIC:
-  - Each class label maps to an event in the input
-  - Environment matches input keywords
-  - Speech flags consistent with events
-  - Special rules applied (e.g., media ≠ music, baby crying ≠ speech)
+EVIDENCE
+  - Each output is supported by the supplied text, audio, frames, metadata,
+    or other approved representation
+  - The model does not invent facts, entities, sources, actions, or intent
+  - Context fields use explicit evidence, not stereotypes or assumed knowledge
+  - Uncertain cases use the defined unknown / abstain behavior
 
-CONSISTENCY:
-  - Same input → same output
-    (run teacher 2x on 10 inputs, check for identical results)</code></pre>
+CONSISTENCY
+  - Run the teacher twice on a stratified sample
+  - Investigate disagreements before training
+  - Audit every taxonomy boundary and every rare class manually</code></pre>
           </div>
         </details>
       </div>
 
       <div class="template-block">
-        <h3>Template 3 — Postprocess rules</h3>
-        <p class="template-intro">Pattern for each known failure mode. Write one rule per reproducible failure, with an explicit trigger and fix.</p>
+        <h3>Template 3 - Schema guard and postprocess rules</h3>
+        <p class="template-intro">Use deterministic code to repair repeatable formatting errors and reject unsupported predictions. This works for text labels, classifications, extracted fields, audio events, and video spans. Do not use postprocessing to silently compensate for an unclear taxonomy or weak data.</p>
         <details class="code-details template-details">
           <summary><span class="summary-title">View the postprocess pattern <span class="summary-meta">Python</span></span></summary>
           <div class="details-inner">
-            <pre data-lang="Python"><code>def postprocess(text, inp):
-    parsed = json.loads(text)
-    labels = parsed["Brioche_Class_Label"]
-    events = parsed["sound_events"].lower()
-    inp_l = inp.lower()
+            <pre data-lang="Python"><code>VALID_LABELS = {"[LABEL_A]", "[LABEL_B]", "[UNKNOWN]"}
 
-    # Rule: [DESCRIPTION]
-    # Trigger: [WHEN IT APPLIES]
-    # Fix: [WHAT TO CHANGE]
-    if [TRIGGER CONDITION]:
-        labels.append("[CLASS]")
+def postprocess(raw_output, input_metadata=None):
+    record = json.loads(raw_output)
+    labels = record.get("labels", [])
 
-    # Rule: [DESCRIPTION]
-    # Also strip hallucinated classes
-    if "[HALLUCINATED CLASS]" in labels and not [context condition]:
-        labels.remove("[HALLUCINATED CLASS]")
+    # Keep only taxonomy-approved labels.
+    labels = [label for label in labels if label in VALID_LABELS]
 
-    parsed["Brioche_Class_Label"] = sorted(set(labels), key=lambda x: VALID.index(x))
-    return parsed</code></pre>
+    # Normalize and validate spans only for temporal tasks.
+    spans = []
+    duration_s = (input_metadata or {}).get("duration_s")
+    if duration_s is not None:
+        for span in record.get("events", []):
+            start = max(0, float(span["start_s"]))
+            end = min(duration_s, float(span["end_s"]))
+            if start &lt; end and span["label"] in VALID_LABELS:
+                spans.append({"label": span["label"], "start_s": start, "end_s": end})
+
+    # One explicit rule per observed, reproducible failure.
+    # Trigger: [when this failure occurs]
+    # Fix: [deterministic correction or rejection]
+
+    record["labels"] = sorted(set(labels))
+    record["events"] = spans
+    return record</code></pre>
           </div>
         </details>
       </div>
 
       <div class="template-block">
-        <h3>Template 4 — Exhaustive test suite structure</h3>
-        <p class="template-intro">One deterministic test per class, environment, and rule. This suite proves coverage; it does not prove generalization.</p>
+        <h3>Template 4 - Coverage test suite for any modality</h3>
+        <p class="template-intro">Include one deterministic case for every label, input type, condition, temporal pattern, and rule. Coverage proves that each supported behavior is tested; it does not prove generalization.</p>
         <details class="code-details template-details">
           <summary><span class="summary-title">View the exhaustive test skeleton <span class="summary-meta">Python</span></span></summary>
           <div class="details-inner">
             <pre data-lang="Python"><code>tests = [
-    # (class_name, input, expected_check_type)
-    ("Snoring", "snoring indoor env", "in"),
-    ("Coughing", "coughing indoor env", "in"),
-    # ... one per class
+    # (case_id, input_fixture, expected_labels, expected_spans)
+    ("clear_text", "fixtures/clear_text.json", ["[LABEL_A]"], []),
+    ("clear_audio", "fixtures/clear_audio.wav", ["[LABEL_A]"], []),
+    ("overlap_video", "fixtures/overlap_video.mp4", ["[LABEL_A]", "[LABEL_B]"], []),
+    ("negative", "fixtures/negative_case.json", ["[UNKNOWN]"], []),
+    ("boundary", "fixtures/boundary_case.json", ["[EXPECTED_LABEL]"], []),
 ]
 
-for cls, inp, check_type in tests:
-    result = annotate(inp)
-    if check_type == "in":
-        assert cls in result["Brioche_Class_Label"]</code></pre>
+for case_id, input_fixture, labels, spans in tests:
+    result = run_model(input_fixture)
+    assert set(result["labels"]) == set(labels), case_id
+    assert spans_match(result.get("events", []), spans), case_id</code></pre>
           </div>
         </details>
       </div>
 
       <div class="template-block">
-        <h3>Template 5 — Regression test structure</h3>
-        <p class="template-intro">Use unseen phrasings and assert the full expected output, not only one label. Keep the ground truth manually audited.</p>
+        <h3>Template 5 - Held-out regression suite</h3>
+        <p class="template-intro">Use inputs the model never saw during training. Cover text styles and languages; audio devices and recording conditions; video angles and lighting; plus rare labels, long inputs, and combinations of events. Keep every expected output manually audited.</p>
         <details class="code-details template-details">
           <summary><span class="summary-title">View the regression test skeleton <span class="summary-meta">Python</span></span></summary>
           <div class="details-inner">
-            <pre data-lang="Python"><code>cases = [
-    # (input, expected_labels, expected_env)
-    ("hum indoor env", ["HVAC / Fan / White-Noise Hum"], "indoor-quiet"),
-    ("dog barking, talking indoor env", ["Dog Barking", "Speech / Talking"], "indoor-quiet"),
-    # ... 100+ more
+            <pre data-lang="Python"><code>regression_cases = [
+    # (input_fixture, expected_output, slice)
+    ("held_out/informal_text.json", {"labels": ["[LABEL_A]"]}, "new writing style"),
+    ("held_out/quiet_room.wav", {"labels": ["[LABEL_A]"]}, "new microphone"),
+    ("held_out/busy_street.mp4", {"labels": ["[LABEL_B]"]}, "new location"),
+    ("held_out/negative_case.json", {"labels": ["[UNKNOWN]"]}, "negative control"),
 ]
 
-for inp, exp_labels, exp_env in cases:
-    result = annotate(inp)
-    assert sorted(result["Brioche_Class_Label"]) == sorted(exp_labels)
-    assert result["acoustic_environment"] == exp_env</code></pre>
+for input_fixture, expected, slice_name in regression_cases:
+    result = run_model(input_fixture)
+    assert canonicalize(result) == canonicalize(expected), slice_name
+
+# Report metrics separately for each slice. A strong overall score can hide
+# poor performance on unfamiliar writing, low-light video, noisy audio,
+# rare classes, or long inputs.</code></pre>
           </div>
         </details>
       </div>
 
       <div class="callout info">
         <div class="callout-label">Template discipline</div>
-        <p>A template is not a shortcut around the specification. The rules inside it are the actual product. Change the taxonomy and the rules must change with it; change the teacher and the examples must be re-audited.</p>
+        <p>A template is not a shortcut around the specification. The task contract, data representation, label definitions, and edge-case rules are the product. Change the modality, teacher, dataset source, or intended behavior and re-audit the examples before using them for training.</p>
       </div>
     </section>
 
     <!-- ============================================================
-         SECTION 7 — TECHNOLOGY MATRIX
+         SECTION 7 - TECHNOLOGY MATRIX
          ============================================================ -->
     <section class="guide-section" id="technology" aria-labelledby="technology-title">
       <h2 class="section-heading" id="technology-title"><span class="section-num">7</span> Technology matrix</h2>
@@ -4043,7 +4074,7 @@ for inp, exp_labels, exp_env in cases:
               <td class="table-tool">NVIDIA NIM <span class="mini-pill">hosted Nemotron 3.5 Bolt E4B</span></td>
               <td><span class="verdict chosen">Chosen</span></td>
               <td class="table-why">Free tier, 40 req/min. <br><strong>Alternatives:</strong> GPT-4 API (paid, higher quality), Claude API (paid), Llama 3 locally (free, needs GPU).</td>
-              <td>You need free teacher generation at scale. Watch for rate limits. <strong>Verify quality BEFORE training</strong> — NIM was ~92% accurate on our task, not 100%.</td>
+              <td>You need free teacher generation at scale. Watch for rate limits. <strong>Verify quality BEFORE training</strong> - NIM was ~92% accurate on our task, not 100%.</td>
             </tr>
 
             <tr class="group-row"><td colspan="5">Hosting</td></tr>
@@ -4116,7 +4147,7 @@ for inp, exp_labels, exp_env in cases:
     </section>
 
     <!-- ============================================================
-         SECTION 8 — NUMBERS AND METRICS
+         SECTION 8 - NUMBERS AND METRICS
          ============================================================ -->
     <section class="guide-section" id="numbers" aria-labelledby="numbers-title">
       <h2 class="section-heading" id="numbers-title"><span class="section-num">8</span> Numbers &amp; metrics</h2>
@@ -4263,11 +4294,11 @@ for inp, exp_labels, exp_env in cases:
     </section>
 
     <!-- ============================================================
-         SECTION 9 — WHAT WE'D DO DIFFERENTLY
+         SECTION 9 - WHAT WE'D DO DIFFERENTLY
          ============================================================ -->
     <section class="guide-section" id="retrospective" aria-labelledby="retrospective-title">
       <h2 class="section-heading" id="retrospective-title"><span class="section-num">9</span> What we&rsquo;d do differently</h2>
-      <p class="section-intro">Reflections on the process, not just the outcome. The model shipped, but several detours were avoidable — and the lessons are in the detours.</p>
+      <p class="section-intro">Reflections on the process, not just the outcome. The model shipped, but several detours were avoidable - and the lessons are in the detours.</p>
 
       <div class="retro-list">
         <article class="retro-item">
@@ -4275,7 +4306,7 @@ for inp, exp_labels, exp_env in cases:
           <div class="retro-content">
             <h3>We should have built the postprocess earlier.</h3>
             <p>We spent hours trying to make the model &ldquo;just be right&rdquo; through prompt engineering. Postprocess would have fixed most failures in 30 minutes.</p>
-            <p class="takeaway"><strong>Lesson:</strong> when failures repeat, postprocess them — don&rsquo;t retrain.</p>
+            <p class="takeaway"><strong>Lesson:</strong> when failures repeat, postprocess them - don&rsquo;t retrain.</p>
           </div>
         </article>
 
@@ -4316,7 +4347,7 @@ for inp, exp_labels, exp_env in cases:
           <span class="retro-num">06</span>
           <div class="retro-content">
             <h3>We should have packaged the bundle on day one.</h3>
-            <p>The HF push happened last, after the model was final. In hindsight, every intermediate version should have been pushed — it would have been free insurance against session loss and easier to iterate.</p>
+            <p>The HF push happened last, after the model was final. In hindsight, every intermediate version should have been pushed - it would have been free insurance against session loss and easier to iterate.</p>
           </div>
         </article>
 
@@ -4324,14 +4355,14 @@ for inp, exp_labels, exp_env in cases:
           <span class="retro-num">07</span>
           <div class="retro-content">
             <h3>The Pi/OpenCode integration was a detour.</h3>
-            <p>It took time and proved nothing useful — the models&rsquo; system prompts fight the fine-tune. A standalone script was the correct interface from day one.</p>
+            <p>It took time and proved nothing useful - the models&rsquo; system prompts fight the fine-tune. A standalone script was the correct interface from day one.</p>
           </div>
         </article>
       </div>
     </section>
 
     <!-- ============================================================
-         SECTION 10 — REUSABLE CHECKLIST
+         SECTION 10 - REUSABLE CHECKLIST
          ============================================================ -->
     <section class="guide-section" id="checklist" aria-labelledby="checklist-title">
       <h2 class="section-heading" id="checklist-title"><span class="section-num">10</span> Reusable checklist</h2>
@@ -4360,7 +4391,7 @@ for inp, exp_labels, exp_env in cases:
           <section class="check-group" aria-labelledby="check-data">
             <h4 id="check-data">Data generation</h4>
             <label class="check-item"><input type="checkbox"><span>Write the system prompt (with rules and examples)</span></label>
-            <label class="check-item"><input type="checkbox"><span>Test teacher model on 10 cases — can it hit 90%+?</span></label>
+            <label class="check-item"><input type="checkbox"><span>Test teacher model on 10 cases - can it hit 90%+?</span></label>
             <label class="check-item"><input type="checkbox"><span>Generate 500+ diverse inputs (template or manual)</span></label>
             <label class="check-item"><input type="checkbox"><span>Run teacher on all inputs, save as JSONL</span></label>
             <label class="check-item"><input type="checkbox"><span>Validate structurally (all fields, valid enums)</span></label>
@@ -4417,10 +4448,154 @@ for inp, exp_labels, exp_env in cases:
       </div>
     </section>
 
+    <!-- ============================================================
+         SECTION 11 - UNIVERSAL MODEL READINESS
+         ============================================================ -->
+    <section class="guide-section" id="universal-readiness" aria-labelledby="universal-readiness-title">
+      <h2 class="section-heading" id="universal-readiness-title"><span class="section-num">11</span> Universal model readiness</h2>
+      <p class="section-intro">The Brioche build shows how to create a focused annotation model. These checks make the same approach dependable for any text, audio, video, or multimodal model before it becomes part of a real workflow.</p>
+
+      <h3>1. Define the decision before selecting the model</h3>
+      <div class="decision blue">
+        <div class="decision-label">Problem contract</div>
+        <p>Write down who uses the output, which decision it informs, the acceptable latency and cost, the consequence of a wrong answer, and the ship threshold. <strong>A model score is not a goal until it is tied to a real decision.</strong></p>
+      </div>
+
+      <h3>2. Govern the data and prevent leakage</h3>
+      <div class="decision green">
+        <div class="decision-label">Data provenance</div>
+        <p>Record each dataset&rsquo;s source, license, consent basis, collection date, transformations, and owner. Split data by the real-world source of correlation: author or document family for text, speaker or recording session for audio, and scene, camera, or shoot for video. <strong>Near-duplicates across train and test produce deceptively strong metrics.</strong></p>
+      </div>
+
+      <h3>3. Establish a baseline and isolate each improvement</h3>
+      <div class="decision amber">
+        <div class="decision-label">Evidence before complexity</div>
+        <p>Measure a simple baseline first: a prompt, rules, retrieval, or an off-the-shelf model. Change one variable at a time when testing data, prompts, model size, training settings, or postprocessing. <strong>Without a baseline and ablations, a better result has no reliable cause.</strong></p>
+      </div>
+
+      <h3>4. Make training repeatable</h3>
+      <div class="decision purple">
+        <div class="decision-label">Reproducibility</div>
+        <p>Version the dataset snapshot, base model, prompt, code revision, training configuration, random seed, and selected checkpoint. Keep a short run record with cost, hardware, duration, metrics, and observed failures. <strong>If you cannot recreate the best run, you cannot safely improve or roll it back.</strong></p>
+      </div>
+
+      <h3>5. Evaluate quality by slice, then calibrate with people</h3>
+      <div class="decision blue">
+        <div class="decision-label">Evaluation protocol</div>
+        <p>Report results for each class and meaningful condition: language and writing style for text; device, noise, and speaker for audio; lighting, camera angle, and scene for video. Use a documented human-review rubric for a sample of outputs and resolve reviewer disagreement. <strong>An overall average can hide the exact group of users the model fails.</strong></p>
+      </div>
+
+      <h3>6. Prepare the operating loop before release</h3>
+      <div class="decision green">
+        <div class="decision-label">Production operations</div>
+        <p>Release a versioned bundle with a model card, known limitations, rollback target, and monitoring plan. Log privacy-safe inputs, outputs, latency, errors, and reviewer corrections; then review new failure patterns on a fixed cadence. <strong>Production data is the source of the next dataset, not an afterthought.</strong></p>
+      </div>
+
+      <h3>7. State the safety boundary</h3>
+      <div class="decision amber">
+        <div class="decision-label">Risk controls</div>
+        <p>Define prohibited uses, sensitive attributes, privacy restrictions, escalation paths, and what the model should do when uncertain. For text, include prompt-injection and unsupported-claim checks; for media, include consent, identity, and harmful-content handling. <strong>Every model needs a clear answer for when it should abstain or hand off to a person.</strong></p>
+      </div>
+
+      <div class="callout info">
+        <div class="callout-label">Release gate</div>
+        <p>Ship only when the task contract, data provenance, leakage check, baseline, reproducible training record, slice-based evaluation, human audit, rollout plan, and safety boundary are documented. Treat any missing item as a known risk, not an implicit assumption.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 12 — START BUILDING
+         ============================================================ -->
+    <section class="guide-section" id="start-building" aria-labelledby="start-building-title">
+      <h2 class="section-heading" id="start-building-title"><span class="section-num">12</span> Start building</h2>
+      <p class="section-intro">Use this page as a field guide, then learn by shipping one small model. Start with one narrow behavior, make the data and evaluation visible, and expand only after the first version works.</p>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num" aria-hidden="true">01</span>
+          <div class="step-content">
+            <h3>Choose one small, observable task</h3>
+            <p>Pick a task with a clear input and answer: classify a support message, extract a field from an invoice, transcribe an audio clip, detect one sound, or label a short video. Write the input, output schema, valid labels, and an unknown or abstain case.</p>
+            <span class="step-gate"><strong>Ready when:</strong> another person can label five examples using your rules.</span>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">02</span>
+          <div class="step-content">
+            <h3>Build a baseline before you train</h3>
+            <p>Try an existing model with a clear prompt, or start with simple rules. Save 20 to 50 representative examples and record its outputs. The baseline tells you whether fine-tuning is justified and gives you a number to beat.</p>
+            <span class="step-gate"><strong>Ready when:</strong> every baseline result is saved beside its expected answer.</span>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">03</span>
+          <div class="step-content">
+            <h3>Create a small, audited dataset</h3>
+            <p>Collect examples that cover common, rare, ambiguous, and negative cases. Split them by source before training so near-duplicates do not reach both the training and held-out sets. Review every training label you cannot explain.</p>
+            <span class="step-gate"><strong>Ready when:</strong> you can explain where every record came from and why its label is correct.</span>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">04</span>
+          <div class="step-content">
+            <h3>Fine-tune the smallest suitable base model</h3>
+            <p>Use parameter-efficient fine-tuning first. Keep the base model, dataset version, prompt, configuration, and checkpoint together. Change one thing per run, then compare against the baseline on the same held-out examples.</p>
+            <span class="step-gate"><strong>Ready when:</strong> a second person could reproduce the run from your saved files.</span>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">05</span>
+          <div class="step-content">
+            <h3>Evaluate, package, and learn from real failures</h3>
+            <p>Review results by class and condition, not only one average score. Package the model, prompt, validation code, test data references, and a short README. Log failures from real use and turn recurring failures into better rules or new examples.</p>
+            <span class="step-gate"><strong>Ready when:</strong> you know the model&rsquo;s strengths, limits, and rollback path.</span>
+          </div>
+        </li>
+      </ol>
+
+      <h3>Open-source learning library</h3>
+      <p>Start with the first two resources, then choose the modality-specific repository that matches your project.</p>
+      <div class="option-grid">
+        <article class="option-card is-chosen">
+          <div class="option-head"><h4>Foundation course</h4></div>
+          <p><a href="https://github.com/huggingface/course">Hugging Face Course</a> is a free, open-source introduction to Transformers, datasets, tokenizers, training, and the Hub. Use it for your first text-model project.</p>
+        </article>
+        <article class="option-card is-chosen">
+          <div class="option-head"><h4>Model and dataset tools</h4></div>
+          <p><a href="https://github.com/huggingface/transformers">Transformers</a> provides training and inference foundations for text, vision, audio, and multimodal models. Pair it with <a href="https://github.com/huggingface/datasets">Datasets</a> to load, transform, and version examples.</p>
+        </article>
+        <article class="option-card">
+          <div class="option-head"><h4>Efficient fine-tuning</h4></div>
+          <p><a href="https://github.com/huggingface/peft">PEFT</a> provides LoRA and related methods for adapting pretrained models with fewer trainable parameters. It is a practical first choice when hardware is limited.</p>
+        </article>
+        <article class="option-card">
+          <div class="option-head"><h4>Training recipes</h4></div>
+          <p><a href="https://github.com/huggingface/trl">TRL</a> provides supervised fine-tuning, preference optimization, reward-modeling, and distillation trainers for Transformer-based language models.</p>
+        </article>
+        <article class="option-card">
+          <div class="option-head"><h4>Audio starting point</h4></div>
+          <p><a href="https://github.com/openai/whisper">Whisper</a> is an open-source speech-recognition project. Read its model card and code to study audio inputs, transcription outputs, and evaluation tradeoffs.</p>
+        </article>
+        <article class="option-card">
+          <div class="option-head"><h4>Video starting point</h4></div>
+          <p><a href="https://github.com/OpenGVLab/InternVideo">InternVideo</a> is an open video-foundation-model project for video and multimodal understanding. Use it to explore video representation, retrieval, classification, and temporal tasks.</p>
+        </article>
+        <article class="option-card">
+          <div class="option-head"><h4>Local deployment</h4></div>
+          <p><a href="https://github.com/ggml-org/llama.cpp">llama.cpp</a> is a local inference project for running compatible models efficiently on consumer hardware. It is useful after your model works and you need a simple local runtime.</p>
+        </article>
+      </div>
+
+      <div class="callout lesson">
+        <div class="callout-label">The learning loop</div>
+        <p>Read one repository, build one narrow version, test it on real examples, write down what failed, and improve the data or contract. <strong>Understanding comes from repeating that loop, not from waiting until you know every tool.</strong></p>
+      </div>
+    </section>
+
     <footer class="page-footer">
       <div>
-        <p class="footer-title">Reference guide — brioche-qwen3b-annotator-v2 — Built for future model-building projects</p>
-        <p class="footer-version">Version 1.0 — Built October 25, 2026 — Based on brioche-qwen3b-annotator-v2</p>
+        <p class="footer-title">Reference guide - brioche-qwen3b-annotator-v2 - Built for future model-building projects</p>
+        <p class="footer-version">Version 1.0 - Built October 25, 2026 - Based on brioche-qwen3b-annotator-v2</p>
       </div>
       <div class="footer-right">
         <span class="footer-note">Private build · not publicly distributed</span>
@@ -5170,7 +5345,7 @@ for inp, exp_labels, exp_env in cases:
       const label = (sectionTitle || "Data table").replace(/\s+/g, " ").trim();
       wrap.tabIndex = 0;
       wrap.setAttribute("role", "region");
-      wrap.setAttribute("aria-label", `${label} — scrollable table ${index + 1}`);
+      wrap.setAttribute("aria-label", `${label} - scrollable table ${index + 1}`);
     });
   }
 
